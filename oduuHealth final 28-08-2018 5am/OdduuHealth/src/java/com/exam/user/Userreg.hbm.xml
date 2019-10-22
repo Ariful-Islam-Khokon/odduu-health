@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 26, 2018 11:08:30 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.exam.user.Userreg" table="userreg" catalog="ohealth">
+        <id name="mobile" type="string">
+            <column name="mobile" length="50" />
+            <generator class="assigned"></generator>
+        </id>
+        <property name="uname" type="string">
+            <column name="uname" length="100" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="100" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="150" />
+        </property>
+    </class>
+</hibernate-mapping>
